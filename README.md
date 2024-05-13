@@ -25,3 +25,8 @@
 ### FeatureResource used in Feature1Controller
 
 > limit data : do not display created_at & updated_at
+
+## Frontend
+
+> Reusable Feature component : /resources/js/Components/Feature.jsx
+> auth is available on every inertia page : HandleInertiaRequests.php
