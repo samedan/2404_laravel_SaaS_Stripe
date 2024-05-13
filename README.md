@@ -2,6 +2,10 @@
 
 > https://www.youtube.com/watch?v=BdGvI3W0f9E&t=644s
 
+### GitHub Source ?
+
+> https://github.com/psalmistcom/laravel_react_saas_with_stripe
+
 ## Install Breeze
 
 > composer require laravel/breeze

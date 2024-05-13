@@ -33,7 +33,12 @@ Route::get('/dashboard', function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/feature1', [Feature1Controller::class, 'index'])->name('feature1.index');
+    Route::post('feature1', [Feature1Controller::class, 'calculate'])
+        ->name('feature1.calculate');
+   
     Route::get('/feature2', [Feature2Controller::class, 'index'])->name('feature2.index');
+    Route::post('feature2', [Feature2Controller::class, 'calculate'])
+        ->name('feature2.calculate');
 });
 
 
