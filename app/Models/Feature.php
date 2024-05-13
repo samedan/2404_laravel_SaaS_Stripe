@@ -18,4 +18,4 @@ class Feature extends Model
         'active',
     ];
 }
- 
+  

@@ -16,3 +16,12 @@
 
 > php artisan make:observer UserObserver
 > /models/User.php -> #[ObservedBy(UserObserver::class)]
+> php artisan migrate:fresh --seed
+
+### Controllers
+
+> php artisan make:controller Feature2Controller
+
+### FeatureResource used in Feature1Controller
+
+> limit data : do not display created_at & updated_at
