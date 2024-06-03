@@ -27,6 +27,7 @@ class Feature1Controller extends Controller
 
     public function calculate(Request $request){
         $user = $request->user();
+        // Check user has enough credits
         if($user->available_credits < $this->feature->available_credits){
             return back();
         }
