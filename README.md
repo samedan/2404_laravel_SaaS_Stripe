@@ -46,3 +46,11 @@
 > https://flowbite.com/blocks/marketing/pricing/
 
 ## Middleware Validate Tokens
+
+> Kernel php
+> or VerifyCsrfToken.php
+
+### Dashboard (Home) Page -> Dashboard Controller
+
+> php artisan make:controller DashboardController
+> php artisan make:resource UsedFeatureResource

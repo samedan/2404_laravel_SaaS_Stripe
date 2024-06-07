@@ -37,6 +37,9 @@ class Feature1Controller extends Controller
         ]);
         $number1 = (float) $data['number1'];
         $number2 = (float) $data['number2'];
+        $result = $number1 + $number2;
+        array_push($data, "Result:".$result);
+        // $dataExported = array_merge($data, "Result:".$result);
 
         $user->decreaseCredits($this->feature->required_credits);
 
@@ -44,10 +47,11 @@ class Feature1Controller extends Controller
             'feature_id' => $this->feature->id,
             'user_id' => $user->id,
             'credits' => $this->feature->required_credits,
+            // 'data' => '$data'
             'data' => $data
         ]);
 
-        return to_route('feature1.index')->with('answer', $number1 + $number2);
+        return to_route('feature1.index')->with('answer', $result);
 
     }
 }
