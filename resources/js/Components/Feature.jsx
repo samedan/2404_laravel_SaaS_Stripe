@@ -44,7 +44,10 @@ export default function Feature({ feature, answer, children }) {
                                     <div>
                                         You don't have enough credits for this
                                         Feature. Go{" "}
-                                        <Link href="/" className="underline">
+                                        <Link
+                                            href={route("credit.index")}
+                                            className="underline"
+                                        >
                                             Buy more credits
                                         </Link>
                                     </div>
@@ -53,7 +56,10 @@ export default function Feature({ feature, answer, children }) {
 
                         <div className="p-8 text-gray-400 border-b pb-4">
                             <p>{feature.description}</p>
-                            <p className="text-sm italic text-right">
+                            <p
+                                className="text-sm italic text-right"
+                                style={{ color: "#fbf045" }}
+                            >
                                 Requires {feature.required_credits} credits
                             </p>
                         </div>

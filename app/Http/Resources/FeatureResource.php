@@ -23,6 +23,7 @@ class FeatureResource extends JsonResource
             "description"=> $this->description,
             "required_credits"=> $this->required_credits,
             "active"=> $this->active,
+            // not created_at and updated_at
         ];
     }
 }

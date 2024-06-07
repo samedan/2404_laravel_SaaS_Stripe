@@ -13,5 +13,11 @@ class VerifyCsrfToken extends Middleware
      */
     protected $except = [
         //
+        "http://127.0.0.1:8000/buy-credits",
+        "http://localhost:8000/buy-credits/webhook",
+        "http://localhost:8000/buy-credits",
+        "localhost:4242/webhook",
+        "http://127.0.0.1:8000/buy-credits/webhook"
+
     ];
 }

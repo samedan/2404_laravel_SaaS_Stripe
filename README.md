@@ -34,3 +34,15 @@
 
 > Reusable Feature component : /resources/js/Components/Feature.jsx
 > auth is available on every inertia page : HandleInertiaRequests.php
+
+## Stripe
+
+> credit CreditController
+> composer require stripe/stripe-php
+> php artisan make:resource PackageResource
+
+## Templates fro pricing
+
+> https://flowbite.com/blocks/marketing/pricing/
+
+## Middleware Validate Tokens

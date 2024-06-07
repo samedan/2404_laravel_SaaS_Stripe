@@ -19,7 +19,7 @@ class Feature1Controller extends Controller
 
     public function index(){
         return inertia('Feature1/Index', [
-            'feature'=> new FeatureResource($this->feature),
+            'feature'=> new FeatureResource($this->feature), // not created_at and updated_at
             'answer'=> session('answer')
         ]);
 
